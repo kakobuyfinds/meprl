@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HooBuy spreadsheet | Product Finds &amp; Buying Checklist</title>
+<meta name="description" content="Browse shoes, hoodies, tees and jackets from HipoBuyFind. Compare source prices and learn what to check before ordering through a shopping agent.">
+<meta name="robots" content="index, follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HooBuy spreadsheet | Product Finds &amp; Buying Checklist">
+<meta property="og:description" content="Search real HipoBuyFind listings and compare prices, sizing and shipping checks.">
+<!-- Google and Bing submission is pending. After deployment, use the final public URL in Google Search Console URL Inspection and Bing Webmaster Tools URL Submission. Add an absolute self-referencing canonical once the preferred URL is known. -->
+<style>
+:root{color-scheme:light;--ink:#172c25;--green:#15563f;--muted:#4b635a;--paper:#f4f7f2;--line:#cddbd1}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 "Instrument Sans",system-ui,sans-serif}
+.shell{width:min(71rem,calc(100% - 2rem));margin-inline:auto}
+.hero{padding:clamp(3.5rem,10vw,8rem) 1rem;text-align:center;background:#123c30;color:#f8fff9}
+.hero p{max-width:37rem;margin:1rem auto 1.75rem;color:#d4e9dd}
+h1,h2{line-height:1.1;letter-spacing:-.04em}h1{font-size:clamp(2.6rem,8vw,5.6rem);margin:0}h2{font-size:clamp(1.8rem,5vw,3rem);margin:0 0 .6rem}
+.actions,.filters{display:flex;flex-wrap:wrap;gap:.65rem}.actions{justify-content:center}
+.button{display:inline-block;padding:.65rem 1.05rem;border:1px solid #c6ecd5;border-radius:.55rem;color:#123c30;background:#c6ecd5;text-decoration:none;font-weight:700}
+.button.secondary{background:transparent;color:#fff}
+main section{padding-block:2.7rem;border-bottom:1px solid var(--line)}
+p{margin:.5rem 0 1rem}.note,footer{color:var(--muted)}
+.filters{margin:1.2rem 0}.filters label{flex:1 1 13rem;font-weight:650}
+input,select{display:block;width:100%;margin-top:.25rem;padding:.65rem;border:1px solid var(--line);border-radius:.45rem;background:#fff;color:var(--ink);font:inherit}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:.65rem;background:white}
+table{width:100%;border-collapse:collapse;min-width:33rem;text-align:left}
+td,th{padding:.65rem .85rem;border-bottom:1px solid var(--line)}thead{background:#e4efe7}tbody tr:last-child td{border-bottom:0}
+a{color:var(--green);text-underline-offset:.2em}:focus-visible{outline:3px solid #bb7631;outline-offset:3px}
+li{margin-bottom:.45rem}details{padding:.65rem 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:700}footer{padding:1.5rem 0}
+[hidden]{display:none!important}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"HooBuy spreadsheet","inLanguage":"en","description":"Independent shopping guide and sample product directory sourced from HipoBuyFind."}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/meprl/">
+</head>
+<body>
+<header class="hero">
+<h1>HooBuy spreadsheet</h1>
+<p>Compare shoes and clothing from HipoBuyFind, then check product links, sizing and shipping costs before placing an agent order.</p>
+<div class="actions">
+<a class="button" href="https://hipobuyfind.com/">HooBuy spreadsheet</a>
+<a class="button secondary" href="https://hipobuyfind.com/">Buy it now</a>
+</div>
+</header>
+<main class="shell">
+<section aria-labelledby="overview">
+<h2 id="overview">How an agent spreadsheet works</h2>
+<p>A HooBuy spreadsheet organizes listings so you can compare products before purchasing through a shopping agent. Use this independent guide to build a shortlist. The listings below come from HipoBuyFind. Check each seller link in your agent account to confirm it can be ordered.</p>
+</section>
+<section aria-labelledby="catalog">
+<h2 id="catalog">HipoBuyFind product directory</h2>
+<p class="note">Selected listings from the <a href="https://hipobuyfind.com/">HipoBuyFind homepage</a>. Prices are a snapshot in Chinese yuan. Use the item ID to identify the listing and confirm its current price, stock and variants at the source.</p>
+<div class="filters" id="filters" hidden>
+<label>Search by item name or ID<input id="query" type="search" placeholder="Try hoodie or 149969"></label>
+<label>Category<select id="category"><option value="">All categories</option><option>Shoes</option><option>Hoodies</option><option>T-shirts</option><option>Jackets</option></select></label>
+</div>
+<p id="status" role="status" hidden></p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable product directory">
+<table>
+<thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Item ID</th><th scope="col">CNY</th></tr></thead>
+<tbody id="products">
+<tr><td><a href="https://hipobuyfind.com/goods-149969.html">Black and red basketball sneakers</a></td><td>Shoes</td><td>149969</td><td>¥145.00</td></tr>
+<tr><td>Cream chunky sneakers with wide laces</td><td>Shoes</td><td>148191</td><td>¥350.00</td></tr>
+<tr><td>Black canvas low-tops with gum sole</td><td>Shoes</td><td>148188</td><td>¥450.00</td></tr>
+<tr><td>Gray hoodie</td><td>Hoodies</td><td>154936</td><td>¥300.00</td></tr>
+<tr><td>Fleece-lined hoodie</td><td>Hoodies</td><td>154917</td><td>¥170.00</td></tr>
+<tr><td>Graphic short-sleeve T-shirt</td><td>T-shirts</td><td>154920</td><td>¥105.00</td></tr>
+<tr><td>Hooded quick-dry jacket</td><td>Jackets</td><td>154851</td><td>¥157.14</td></tr>
+<tr><td>Down jacket collection</td><td>Jackets</td><td>153896</td><td>¥192.00</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section aria-labelledby="checklist">
+<h2 id="checklist">What to check before ordering</h2>
+<ol>
+<li><strong>Check the seller link.</strong> Open the source listing, choose the exact color and size, then see whether the agent recognizes that listing and variant.</li>
+<li><strong>Compare measurements.</strong> For shoes, check the seller’s foot-length guidance. For clothing, compare the listed garment width and length with a piece you already own.</li>
+<li><strong>Estimate the total.</strong> Add the variant price, domestic delivery, applicable agent fees, estimated international shipping and any applicable import taxes. If a bulky item ships by volumetric weight, ask which parcel dimensions the shipping quote uses.</li>
+<li><strong>Review warehouse photos.</strong> If your agent offers quality-control photos, check the size label, color, quantity and visible defects before approving shipment. Check the return window when the item arrives at the warehouse.</li>
+</ol>
+</section>
+<section aria-labelledby="faq">
+<h2 id="faq">Common questions</h2>
+<details><summary>Where do the two buttons take me?</summary><p>Both open HipoBuyFind, the catalog source for this page.</p></details>
+<details><summary>How can I estimate the cost in my currency?</summary><p>Use the exchange rate quoted by your payment provider or agent and include its fees. Confirm shipping and taxes separately for your destination.</p></details>
+<details><summary>What if an item ID leads to an unavailable listing?</summary><p>Look for another active listing and compare the seller, measurements and variant price before placing a new order.</p></details>
+</section>
+</main>
+<footer class="shell">Independent HooBuy shopping guide. Catalog source: HipoBuyFind.</footer>
+<script>
+const query = document.getElementById('query');
+const category = document.getElementById('category');
+const status = document.getElementById('status');
+const rows = Array.from(document.querySelectorAll('#products tr'));
+
+function filterProducts() {
+  const term = query.value.trim().toLowerCase();
+  let count = 0;
+  for (const row of rows) {
+    const categoryMatches = !category.value || row.cells[1].textContent === category.value;
+    const searchableText = row.cells[0].textContent + ' ' + row.cells[2].textContent;
+    const matches = categoryMatches && searchableText.toLowerCase().includes(term);
+    row.hidden = !matches;
+    count += Number(matches);
+  }
+  status.textContent = count ? count + (count === 1 ? ' listing' : ' listings') : 'No matches. Try another search or category.';
+}
+document.getElementById('filters').hidden = false;
+status.hidden = false;
+query.addEventListener('input', filterProducts);
+category.addEventListener('change', filterProducts);
+filterProducts();
+</script>
+</body>
+</html>
